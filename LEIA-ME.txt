@@ -1,0 +1,24 @@
+LAST CORRIDOR — FAN GAME
+
+Abra index.html no navegador. Não precisa instalar nada.
+Controles: setas/WASD, Z/Enter confirma, X/Shift/C volta, Esc pausa.
+Celular: botões na tela ou arraste a alma. Na alma azul, arraste acima dela para saltar.
+
+PAINEL OCULTO: Ctrl + Shift + E. No celular, toque 5 vezes no título LAST CORRIDOR em até 3 segundos.
+Todos os PNGs, GIFs e áudios estão listados. GIFs animados usam ImageDecoder (Chrome/Edge atual); em navegadores sem essa API aparece o primeiro quadro. blaster.png é a imagem aparecendo; blasterataque.png é a imagem durante o disparo. voz.mp3 aceita MP3 e repete enquanto o texto do diálogo aparece, parando ao terminar, pular ou pausar a fala. Os efeitos padrão têm nomes .mp3 no painel, mas usam WAV PCM gerado: você pode substituir por MP3, WAV, OGG ou M4A suportado no navegador.
+O painel salva no IndexedDB deste navegador e domínio. Limpar dados, modo privado ou trocar de navegador pode remover as alterações locais.
+Para tornar uma troca permanente para TODOS, use EXPORTAR JOGO .ZIP e substitua o index.html publicado. A exportação inclui todas as mídias dentro do HTML e mantém o painel.
+RESTAURAR retorna ao recurso da versão publicada; um ZIP exportado passa a ter seus recursos como base. Backups JSON guardam apenas mídias.
+
+GITHUB PAGES
+1. Extraia o ZIP.
+2. Envie index.html à raiz do seu repositório.
+3. Em Settings > Pages, publique a branch com a pasta raiz.
+4. Abra o endereço fornecido pelo GitHub. Em atualizações, recarregue sem cache.
+Se você já fez trocas locais, elas prevalecem sobre a versão publicada até restaurar recursos.
+Senha do painel: Senha123321Ahnes. Ela será solicitada a cada abertura. Como tudo roda no navegador, a senha pode ser vista no código e não oferece autenticação de servidor. Nenhum token é usado.
+
+BATALHA
+Oito padrões com ossos, regras azul/laranja, gravidade, plataformas e blasters. A primeira defesa vem antes do menu. Depois de oito padrões Sans se cansa. FIGHT ou MERCY inicia a última defesa; após sobreviver, escolha FIGHT ou MERCY para concluir.
+O KARMA roxo drena HP durante a defesa. Itens restauram vida e limpam KARMA. Dificuldades (dano / salvas): extremamente fácil 1× / 1×; fácil 1,2× / 1,5×; normal 1,4× / 2×; difícil 1,6× / 2,5×; muito difícil 1,8× / 3×; impossível 999999× / 3×. A base é o modo original: 3 HP de impacto + 4 KARMA por contato. Multiplicadores se aplicam ao impacto, KARMA e drenagem. Salvas são arredondadas ao inteiro mais próximo por padrão. A velocidade permanece igual. Os ataques não são agrupados: o intervalo entre salvas diminui conforme a dificuldade. Na segunda fase, os saltos acompanham essa frequência mantendo a altura. As plataformas têm degraus de 42 e 38 pixels, dentro do alcance do salto. Os blasters disparam na vertical, horizontal e diagonal: 80% de chance de mirar na posição da alma ao aparecer e 20% de escolher um alvo aleatório. A trajetória fica fixa durante o aviso. No impossível, um contato mata.
+Roteiro, sprites e trilha próprios; inspirado nas mecânicas descritas, não é uma reprodução exata da batalha oficial.
